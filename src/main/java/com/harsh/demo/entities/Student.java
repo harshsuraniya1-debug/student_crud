@@ -3,8 +3,14 @@ package com.harsh.demo.entities;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Entity
+@Getter
+@Setter
+@NoArgsConstructor
 public class Student {
     @Id
     @GeneratedValue
@@ -14,6 +20,6 @@ public class Student {
     private int rollNo ;
     private String surname;
     private String state;
-    private int phone;
+    private String phone;
 
 }
