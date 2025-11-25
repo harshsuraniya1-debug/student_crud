@@ -20,7 +20,7 @@ public class MapperUtil {
 
     public static StudentDto toDto(Student student){
         StudentDto studentDto = new StudentDto();
-        //studentDto.setId(student.getId());
+        studentDto.setId(student.getId());
         studentDto.setName(student.getName());
         studentDto.setPhone(student.getPhone());
         studentDto.setState(student.getState());
