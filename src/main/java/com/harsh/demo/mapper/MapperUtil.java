@@ -7,7 +7,7 @@ public class MapperUtil {
 
     public static Student toEntity(StudentDto studentDto){
         Student student = new Student();
-        student.setId(studentDto.getId());
+        //student.setId(studentDto.getId());
         student.setName(studentDto.getName());
         student.setState(studentDto.getState());
         student.setSurname(studentDto.getSurname());
